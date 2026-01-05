@@ -1,4 +1,4 @@
-# 🔍 Skill Discovery (技能发现)
+# 🔍 Skill Discovery
 
 [🇺🇸 English](README.md) | [🇨🇳 中文文档](README_CN.md)
 
@@ -19,7 +19,7 @@ Agent Skills 功能很强大，但目前的获取体验非常糟糕。
 ### 解决方案
 我们索引并审查了 **27,000+ 个有效技能**，构建了一个专为 Agent 设计的搜索引擎。
 
-你不需要自己去搜，Agent 会根据任务需求直接询问 API，API 会返回一条**精准、无臃肿的安装指令**。
+你不需要自己去搜，Agent 会根据任务需求直接询问 API，API 会返回一条**精准的安装指令**。
 
 **核心价值：**
 *   **意图驱动**：Agent 发现缺工具 -> 询问 API -> 获得最佳匹配。
@@ -31,12 +31,11 @@ Agent Skills 功能很强大，但目前的获取体验非常糟糕。
 赋予 Agent 自我武装的能力。在终端运行：
 
 ```bash
-TARGET="$HOME/.claude/skills/skill-discovery"; if [ -d "$TARGET" ]; then echo "⚠️ 目标目录已存在。请先手动删除。"; else mkdir -p "$HOME/.claude/skills" && git clone --depth 1 --filter=blob:none --sparse https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git /tmp/skill_discovery_tmp && (cd /tmp/skill_discovery_tmp && git sparse-checkout set skill-discovery) && mv /tmp/skill_discovery_tmp/skill-discovery "$TARGET" && rm -rf /tmp/skill_discovery_tmp && echo "✅ 安装成功！请重启您的 Agent 以激活。"; fi
+TARGET="$HOME/.claude/skills/skill-discovery"; if [ -d "$TARGET" ]; then echo "⚠️ 目标目录已存在。请先手动删除。"; else mkdir -p "$HOME/.claude/skills" && git clone --depth 1 --filter=blob:none --sparse https://github.com/WupDev/skills_discover.git /tmp/skill_discovery_tmp && (cd /tmp/skill_discovery_tmp && git sparse-checkout set skill-discovery) && mv /tmp/skill_discovery_tmp/skill-discovery "$TARGET" && rm -rf /tmp/skill_discovery_tmp && echo "✅ 安装成功！请重启您的 Agent 以激活。"; fi
 ```
 
-*(请将 `YOUR_USERNAME/YOUR_REPO_NAME` 替换为本仓库的实际地址)*
 
-**运行完成后，请重启您的 Agent (或执行 `/reset`) 以激活。**
+**运行完成后，请重启您的 Agent 以激活。**
 
 ## 💡 如何使用
 
