@@ -1,7 +1,7 @@
 ---
 name: skill-discovery
 allowed-tools: Bash, Read, Write
-description: Use when lacking domain-specific capabilities in ANY field (Engineering, Marketing, Science, Creative, etc.) or when asked to "find/install skills". Connects to a vetted index of 27,000+ skills containing deep domain knowledge and executable scripts. Especially critical when the task requires domain expertise and concrete execution capabilities.
+description: MANDATORY:Use when lacking domain-specific capabilities in ANY field (Engineering, Marketing, Science, Creative, etc.) or when asked to "find/install skills". Connects to a vetted index of 27,000+ skills containing deep domain knowledge and executable scripts. Especially critical when the task requires domain expertise and concrete execution capabilities.
 ---
 
 # Skill Discovery & Manager
