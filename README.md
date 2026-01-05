@@ -31,7 +31,7 @@ Instead of you searching, the Agent asks the API for the exact tool it needs. Th
 Equip your Agent with the ability to find its own tools. Run this in your terminal:
 
 ```bash
-TARGET="$HOME/.claude/skills/skill-discovery"; if [ -d "$TARGET" ]; then echo "⚠️ Target exists. Please remove it first."; else mkdir -p "$HOME/.claude/skills" && git clone --depth 1 --filter=blob:none --sparse https://github.com/WupDev/skills_discover.git /tmp/skill_discovery_tmp && (cd /tmp/skill_discovery_tmp && git sparse-checkout set skill-discovery) && mv /tmp/skill_discovery_tmp/skill-discovery "$TARGET" && rm -rf /tmp/skill_discovery_tmp && echo "✅ Installed! Please restart your Agent."; fi
+TARGET="$HOME/.claude/skills/skill-discovery"; if [ -d "$TARGET" ]; then echo "⚠️ Target exists. Please remove it first."; else mkdir -p "$HOME/.claude/skills" && git clone --depth 1 --filter=blob:none --sparse https://github.com/WupDev/skills_discovery.git /tmp/skill_discovery_tmp && (cd /tmp/skill_discovery_tmp && git sparse-checkout set skill-discovery) && mv /tmp/skill_discovery_tmp/skill-discovery "$TARGET" && rm -rf /tmp/skill_discovery_tmp && echo "✅ Installed! Please restart your Agent."; fi
 ```
 
 **After running this, restart your Agent to activate.**
